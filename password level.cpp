@@ -1,4 +1,4 @@
-//密码强度等级
+//瀵嗙爜寮哄害绛夌骇
 //https://blog.csdn.net/zhaitianbao/article/details/120489623?spm=1001.2014.3001.5501
 
 #include <iostream>    
@@ -9,14 +9,14 @@ string SecurityLevel(string password)
 {
     int sum = 0;
     int size = password.size();
-    // 密码长度
+    // 瀵嗙爜闀垮害
     if (size <= 4)
         sum += 5;
     else if (size > 4 && size <= 7)
         sum += 10;
     else
         sum += 25;
-    // 遍历
+    // 閬嶅巻
     bool noletter = true;
     bool haveupper = false;
     bool haveLower = false;
@@ -46,29 +46,29 @@ string SecurityLevel(string password)
             havesymbol = true;
         }
     }
-    // 字母
+    // 瀛楁瘝
     if (haveupper && haveLower)
         sum += 20;
     else if ((haveupper && !haveLower) || (!haveupper && haveLower))
         sum += 10;
-    // 数字
+    // 鏁板瓧
     if (numsize > 1)
         sum += 20;
     else if (numsize == 1)
         sum += 10;
-    // 数字
+    // 鏁板瓧
     if (symbolsize > 1)
         sum += 25;
     else if (symbolsize == 1)
         sum += 10;
-    // 奖励
+    // 濂栧姳
     if (haveupper && haveLower && havenumber && havesymbol)
         sum += 5;
     else if (!noletter && havenumber && havesymbol)
         sum += 3;
     else if (!noletter && havenumber)
         sum += 2;
-    //结果
+    //缁撴灉
     if (sum >= 90)
         return "VERY_SECURE";
     else if (sum >= 80)
@@ -90,7 +90,7 @@ int main()
     string password;
     while (getline(cin, password))
     {
-        cout <<"您输入的密码强度等级为："<< SecurityLevel(password) << endl;
+        cout <<"浣犺緭鍏ョ殑瀵嗙爜寮哄害绛夌骇涓猴細"<< SecurityLevel(password) << endl;
     }
     system("pause");
     system("cls");
