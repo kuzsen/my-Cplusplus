@@ -27,5 +27,8 @@
     <ClCompile Include="password level.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="求最大连续bit数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
