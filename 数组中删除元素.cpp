@@ -9,13 +9,13 @@ void del(int nums[], int length, int target)
 		i++;
 	}
 }
-int main2()
+int main()
 {
 	int nums[] = { 1,2,3,4,5,6 };
 	int target = 2;
 	int length = sizeof(nums) / sizeof(nums[0]);
 	del(nums, length, target);
-	for (int j = 0; j < length - 1; j++)
+	for (int j = 0; j < length-1;j++)
 	{
 		cout << nums[j] << endl;
 	}

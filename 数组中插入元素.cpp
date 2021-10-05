@@ -14,7 +14,7 @@ void insert(int nums[], int length, int target)
 		cout << nums[j] << endl;
 	}
 }
-int main1()
+int main()
 {
 	int nums[] = { 1,2,3,4,5,7 };
 	int length = sizeof(nums) / sizeof(nums[0]);
