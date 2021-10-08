@@ -30,5 +30,8 @@
     <ClCompile Include="数组中插入元素.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="求数组中长度为n的和为偶数子序列的个数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
