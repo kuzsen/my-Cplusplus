@@ -41,6 +41,7 @@ signed main() //Ö÷º¯ÊıÓÉint main()¸Ä³Ésigned main(),ºÃ´¦£º°Ñint¸Ä³Élong long µÄÊ
     cout << "ÇëÊäÈë×ÓĞòÁĞ³¤¶Èn=" << endl;
     cin >> n;
     //int A =3, B = 2;µ÷ÊÔÓÃ£¬¼ÆËãÊäÈëÊı×éÖĞÆæÊıA¸ö£¬Å¼ÊıB¸ö
+    int A = 0, B = 0;
     for (int i = 0, x; i < len; i++) { cin >> x; if (x & 1) A++; else B++; }//x & 1,xÎªÆæÊı£¬x & 1 = 1£»xÎªÅ¼Êı£¬x  & 1 = 0£»
     //ÀıÈçÊäÈëÊı×éx = 1 2 3 4 5
     ll ans = 0;
