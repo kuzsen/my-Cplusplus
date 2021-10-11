@@ -50,7 +50,7 @@ public:
         int carry = 0;//进位数
         while (l1 || l2)//l1和l2当前为均不为空
         {
-            int x = l1 ? l1->val : 0;
+            int x = l1 ? l1->val : 0;//l1为空，补0
             int y = l2 ? l2->val : 0;
             int temp_sum = x + y + carry;
 
