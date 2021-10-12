@@ -48,6 +48,9 @@
     <ClCompile Include="哈希表myhash_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="时间复杂度.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
