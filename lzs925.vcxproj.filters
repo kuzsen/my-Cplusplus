@@ -42,5 +42,8 @@
     <ClCompile Include="LeetCode第二题两数相加.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode第三题无重复字符的最长子串.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -7,7 +7,7 @@ class ListNode {
 public:
     int val;//当前结点值
     ListNode* next;//指向下一结点
-    ListNode(int x) : val(x), next(NULL) {}
+    ListNode(int x) : val(x), next(NULL) {}//?
 };
 
 //2、创建链表
