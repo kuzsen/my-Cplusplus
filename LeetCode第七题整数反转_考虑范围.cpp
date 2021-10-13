@@ -14,6 +14,9 @@
 
 #include<iostream>
 using namespace std;
+#include<string>
+#include< cstring >
+
 int Reverse(int& n) 
 {
 	int res = 0;//定义输出结果resul
@@ -39,10 +42,39 @@ int Reverse(int& n)
 	return res;
 }
 
+//法二，不可用
+int Reverse2(string & a) {
+
+	reverse(a.begin(), a.end()); // 将字符串a从首到尾反向排列
+	int res = stoi(a); // 字符串a转换为int类型
+	return res;
+}
+//法三
+//https://leetcode-cn.com/problems/reverse-integer/solution/zheng-shu-fan-zhuan-by-leetcode-solution-bccn/
+int Reverse3(int x) {
+	int rev = 0;
+	while (x != 0) {
+		if (rev < INT_MIN / 10 || rev > INT_MAX / 10) {
+			return 0;
+		}
+		int digit = x % 10;
+		x /= 10;
+		rev = rev * 10 + digit;
+	}
+	return rev;
+}
+
 int main()
 {
-	int test = 2147483646;
-	cout << Reverse(test) << endl;
+	//int test = 2147483646;
+    int  test1 = 123456;
+	int  test2 = 654321;
+	
+	cout << Reverse(test1) << endl;
+	cout << Reverse3(test2) << endl;
+	//string a;
+	//getline(cin, a); // 输入一行字符串
+	//cout << Reverse2(a) << endl;
 
 	system("pause");
 	system("cls");
