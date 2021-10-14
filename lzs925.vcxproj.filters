@@ -36,28 +36,28 @@
     <ClCompile Include="回文数1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="LeetCode第一题两数之和.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="LeetCode第二题两数相加.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="LeetCode第三题无重复字符的最长子串.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="哈希表myhash_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="时间复杂度.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="LeetCode第七题整数反转_考虑范围.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="测试框架.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="机房预约系统\主函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\LeetCode第二题两数相加.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\LeetCode第七题整数反转_考虑范围.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\LeetCode第三题无重复字符的最长子串.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\LeetCode第一题两数之和.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
