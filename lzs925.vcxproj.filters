@@ -57,6 +57,9 @@
     <ClCompile Include="测试框架.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="机房预约系统\主函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
