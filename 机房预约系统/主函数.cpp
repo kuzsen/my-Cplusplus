@@ -1,6 +1,19 @@
 #include<iostream>
+#include<string>
 using namespace std;
+#include"GolbalFile.h"
+#include"Identity.h"
 
+
+
+//登录全局函数
+void LoginIn(string filename,string type)//fileName — 操作的文件名，type — 登录的身份(1代表学生、 2代表老师、 3代表管理员)
+{
+	Identity* person = nullptr;//父类指针   用于指向子类对象
+
+	//读文件
+
+}
 int main()
 {
 	int select = 0;
