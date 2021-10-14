@@ -23,8 +23,8 @@ vector<int> bubbleSort(vector<int>& nums)
 int algorithm1(int N)
 {
     if (N <= 0) return 1;
-    int count_1 = algorithm(N - 1);
-    int count_2 = algorithm(N - 1);
+    int count_1 = algorithm1(N - 1);
+    int count_2 = algorithm1(N - 1);
     return count_1 + count_2;
 }
 
