@@ -60,9 +60,30 @@
     <ClCompile Include="LeetCode刷题\LeetCode第一题两数之和.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="机房预约系统\Student.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="机房预约系统\Teacher.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="机房预约系统\Manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="机房预约系统\Identity.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="机房预约系统\Student.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="机房预约系统\Teacher.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="机房预约系统\Manager.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

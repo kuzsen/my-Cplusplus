@@ -174,7 +174,12 @@
     <ClCompile Include="时间复杂度.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="机房预约系统\主函数.cpp" />
+    <ClCompile Include="机房预约系统\Manager.cpp" />
+    <ClCompile Include="机房预约系统\Student.cpp" />
+    <ClCompile Include="机房预约系统\Teacher.cpp" />
+    <ClCompile Include="机房预约系统\主函数.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="求数组中长度为n的和为偶数子序列的个数.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -189,6 +194,10 @@
     <ClInclude Include="哈希表myhash.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClInclude>
+    <ClInclude Include="机房预约系统\Identity.h" />
+    <ClInclude Include="机房预约系统\Manager.h" />
+    <ClInclude Include="机房预约系统\Student.h" />
+    <ClInclude Include="机房预约系统\Teacher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
