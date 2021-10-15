@@ -194,6 +194,7 @@
     <ClInclude Include="哈希表myhash.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClInclude>
+    <ClInclude Include="机房预约系统\ComputerRoom.h" />
     <ClInclude Include="机房预约系统\GolbalFile.h" />
     <ClInclude Include="机房预约系统\Identity.h" />
     <ClInclude Include="机房预约系统\Manager.h" />

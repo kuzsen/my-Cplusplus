@@ -157,7 +157,7 @@ void LoginIn(string filename,int type)//fileName — 操作的文件名，type — 登录的
 				system("pause");
 				system("cls");//清屏
 
-				Father = new Manager(name, password);  //父类指针指向子类对象
+				Father = new Manager(name, password);  //父类指针指向子类对象,此时调用Manager的有参构造函数，即可初始化学生和老师信息容器
 				//进入管理员身份的子菜单
 				managerMenu(Father);
 				return;

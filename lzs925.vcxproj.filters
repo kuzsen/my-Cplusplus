@@ -89,6 +89,9 @@
     <ClInclude Include="机房预约系统\GolbalFile.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="机房预约系统\ComputerRoom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="机房预约系统\student.txt" />
