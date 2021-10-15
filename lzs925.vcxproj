@@ -200,6 +200,9 @@
     <ClInclude Include="机房预约系统\Student.h" />
     <ClInclude Include="机房预约系统\Teacher.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="机房预约系统\student.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
