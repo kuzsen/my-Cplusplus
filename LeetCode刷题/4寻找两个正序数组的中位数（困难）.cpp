@@ -2,7 +2,7 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-
+//解法一，暴力，时间复杂度是O（m+n），简单，但是耗时占内存
 double findmediansortedarrays(vector<int>& nums1, vector<int>& nums2) 
 {
     vector<double> twonums;
@@ -27,8 +27,10 @@ double findmediansortedarrays(vector<int>& nums1, vector<int>& nums2)
     {
         if (twonums.size() % 2 == 0)
         {
-            double x = twonums.size() / 2;//trunc(a) 取a的整数部分
-            res = (twonums[x] + twonums[x - 1]) / 2;
+           // double x = twonums.size() / 2;//double类型，防止算术溢出
+            int x = twonums.size() / 2;
+            //res = (twonums[x] + twonums[x - 1]) / 2;
+            res = (twonums[x] + twonums[x - 1]) / 2.0;//2.0防止算术溢出
         }
         else
         {
