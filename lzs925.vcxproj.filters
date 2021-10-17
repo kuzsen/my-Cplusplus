@@ -60,6 +60,9 @@
     <ClCompile Include="LeetCode刷题\4寻找两个正序数组的中位数（困难）.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\5最长回文子串.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
