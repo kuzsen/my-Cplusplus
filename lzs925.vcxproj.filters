@@ -69,6 +69,9 @@
     <ClCompile Include="LeetCode刷题\8_字符串转换为整数（atoi）.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\10正则表达式匹配（困难）.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
