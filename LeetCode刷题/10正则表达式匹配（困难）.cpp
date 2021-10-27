@@ -24,6 +24,29 @@ bool isMatch(string s, string p) {
 
 }
 
+//方法一优化——非常节约内存
+//两个版本的算法完全一样。区别在易读版本的 substr 会创建新字符串，产生大量的内存申请和复制的操作。优化后的版本规避了此问题
+
+class Solution {
+public:
+    bool isMatch3(string s, string p) {
+        return isMatch3(s.c_str(), p.c_str());//c_str()就是将C++的string转化为C的字符串数组，c_str()生成一个const char *指针，指向字符串的首地址。
+    }
+
+    bool isMatch3(const char* s, const char* p) {
+        if (*p == 0) return *s == 0;
+
+        auto first_match3 = *s && (*s == *p || *p == '.');
+
+        if (*(p + 1) == '*') {
+            return isMatch3(s, p + 2) || (first_match3 && isMatch3(++s, p));
+        }
+        else {
+            return first_match3 && isMatch3(++s, ++p);
+        }
+    }
+};
+
 // 方法二  动态规划法，状态转移     dp(i,j)表示：s的前i个字符和p的前j个字符是否匹配。
 
 bool first_match1(string s, string p, int i, int j) {
