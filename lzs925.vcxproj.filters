@@ -69,9 +69,6 @@
     <ClCompile Include="LeetCode刷题\8_字符串转换为整数（atoi）.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\10正则表达式匹配（困难）.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="正则表达式match.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -79,6 +76,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="LeetCode刷题\11盛最多水的容器_双指针.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\94二叉树的中序遍历.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\17电话号码的字母组合.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
