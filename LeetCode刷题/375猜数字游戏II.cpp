@@ -1,3 +1,5 @@
+//动态规划题
+//https://leetcode-cn.com/problems/guess-number-higher-or-lower-ii/solution/dong-tai-gui-hua-c-you-tu-jie-by-zhang-xiao-tong-2/
 #include<iostream>
 #include<vector>
 using namespace std;
