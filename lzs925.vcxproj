@@ -145,7 +145,10 @@
     <ClCompile Include="LeetCode刷题\17电话号码的字母组合.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\375猜数字游戏II.cpp" />
+    <ClCompile Include="LeetCode刷题\22括号生成.cpp" />
+    <ClCompile Include="LeetCode刷题\375猜数字游戏II.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\4寻找两个正序数组的中位数（困难）.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
