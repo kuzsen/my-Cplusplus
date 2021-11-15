@@ -102,6 +102,12 @@
     <ClCompile Include="LeetCode刷题\20有效的括号组合_简单_哈希+栈.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\144二叉树的前序遍历——递归法和栈实现.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\145二叉树的后序遍历.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
