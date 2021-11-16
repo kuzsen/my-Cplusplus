@@ -1,5 +1,7 @@
 #pragma once
 #include "Identity.h"
+#include<vector>
+#include"ComputerRoom.h"
 
 class Student : public Identity
 {
@@ -27,6 +29,11 @@ public:
 
 	//学生学号
 	int m_studentId;
+
+	//在申请预约时，学生可以看到机房的信息，因此我们需要让学生获取到机房的信息
+	//在student.h中添加新的成员变量：
+	//机房容器
+	vector<ComputerRoom> vCom;
 
 };
 

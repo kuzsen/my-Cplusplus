@@ -117,7 +117,7 @@ void Manager::addPerson()
 	ofs.close();//关闭文件
 
 	//bug描述：刚刚添加的账号（学生号或者职工号）由于没有更新到容器中，在3管理员界面，继续选择1添加账号时，依然会重复，因为学生or老师容器还未更新
-	//解决方案：在每次添加新账号时，重新初始化容器，即把刚刚添加的账号，加到学生or老师容器中
+	//解决方案：在每次添加新账号后，重新初始化容器，即把刚刚添加的账号，加到学生or老师容器中
 	this->initVector();
 
 	return;
@@ -149,7 +149,8 @@ void Manager::showPerson()
 	if (select == 1)//查看学生
 	{
 		cout << "所有学生信息如下：" << endl;
-		for_each(stu.begin(), stu.end(), printStudent);//遍历学生容器，逐个打印出学生信息//for_each需要包含算法头文件#include<algorithm>
+		for_each(stu.begin(), stu.end(), printStudent);// // perform function for each element [_First, _Last)
+		//遍历学生容器，逐个打印出学生信息//for_each需要包含算法头文件#include<algorithm>
 	}
 	else //查看老师
 	{

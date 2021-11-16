@@ -8,11 +8,59 @@ using namespace std;
 #include"Manager.h"
 #include<fstream>//C++文件输入与输出，头文件<fstream>中包含三个文件输入输出类——ifstream/ofstream/fstream，分别由相应的iostream中的类派生而来
 
-//全局函数——进入管理员子菜单界面
+//全局函数——进入管理员操作子菜单界面
 //****注意，一定要放在全局登录函数LoginIn的上面，因为LoginIn中会调用该函数
 //****否则会提示       "managerMenu":找不到标识符
 //*****可以先写一个函数声明，如下，这样  函数实现  就可以随意放了
 //void managerMenu(Identity*& father);//函数声明
+
+
+//全局函数——进入学生操作子菜单界面
+void studentMenu(Identity*& father) 
+{
+	while (true)
+	{
+		//调用学生子菜单,基类中的纯虚函数在学生子类中实现
+		father->operMenu();
+		//将父类指针father 强制转换为学生子类指针stu ，用于调用子类中的其他函数接口
+		Student* stu = (Student*)father;
+		//接收学生的选择
+		int select = 0;
+		cin >> select;
+		if (select == 1)
+		{
+			cout << "申请预约" << endl;
+			stu->applyOrder();
+		}
+		else if (select == 2)
+		{
+			cout << "查看我的预约" << endl;
+			stu->showMyOrder();
+		}
+		else if (select == 3)
+		{
+			cout << "查看所有预约" << endl;
+			stu->showAllOrder();
+		}
+		else if (select == 4)
+		{
+			cout << "取消预约" << endl;
+			stu->cancelOrder();
+		}
+		else
+		{
+			delete father;//销毁堆区对象
+			cout << "注销成功" << endl;
+			system("pause");
+			system("cls");
+			return;			
+		}
+
+
+	}
+}
+
+//全局函数——进入老师操作子菜单界面
 
 void managerMenu(Identity*& father)//参数father的类型为父类指针
 {
@@ -20,11 +68,11 @@ void managerMenu(Identity*& father)//参数father的类型为父类指针
 	{
 		//调用管理员子菜单
 		father->operMenu();
-		//将父类指针father 强制转换为子类指针man   ，用于调用子类中的其他函数接口
+		//将父类指针father 强制转换为子类指针man ，用于调用子类中的其他函数接口
 		Manager* man = (Manager*)father;
 
 		int select = 0;
-		//接受用户的选项
+		//接受管理员的选项
 		cin >> select;
 		if (select == 1)
 		{
@@ -112,7 +160,8 @@ void LoginIn(string filename,int type)//fileName — 操作的文件名，type — 登录的
 				system("cls");//清屏
 
 				Father = new Student(id, name, password);  //父类指针指向子类对象
-				//进入学生身份的子菜单
+				//进入学登录后的子菜单
+				studentMenu(Father);
 				return;
 			}
 		}
@@ -136,7 +185,7 @@ void LoginIn(string filename,int type)//fileName — 操作的文件名，type — 登录的
 
 				Father = new Teacher(id, name, password);  //父类指针指向子类对象
 				//进入老师身份的子菜单
-
+				//studentMenu(Father);
 				return;
 			}
 		}
@@ -171,8 +220,6 @@ void LoginIn(string filename,int type)//fileName — 操作的文件名，type — 登录的
 }
 
 
-//全局函数——进入管理员子菜单界面
-//全局函数——进入管理员子菜单界面
 int main()
 {
 	int select = 0;

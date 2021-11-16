@@ -196,7 +196,9 @@
     <ClCompile Include="LeetCode刷题\LeetCode第二题两数相加.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\每日一题319灯泡开关（数论题，中等）.cpp" />
+    <ClCompile Include="LeetCode刷题\每日一题319灯泡开关（数论题，中等）.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="华为机试\17坐标移动.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -226,6 +228,11 @@
     <ClCompile Include="时间复杂度.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="机房预约系统\Manager.cpp" />
+    <ClCompile Include="机房预约系统\OrderFile.cpp" />
+    <ClCompile Include="机房预约系统\Student.cpp" />
+    <ClCompile Include="机房预约系统\Teacher.cpp" />
+    <ClCompile Include="机房预约系统\主函数.cpp" />
     <ClCompile Include="正则表达式match.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -243,6 +250,21 @@
     <ClInclude Include="哈希表myhash.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClInclude>
+    <ClInclude Include="机房预约系统\ComputerRoom.h" />
+    <ClInclude Include="机房预约系统\GolbalFile.h" />
+    <ClInclude Include="机房预约系统\Identity.h" />
+    <ClInclude Include="机房预约系统\Manager.h" />
+    <ClInclude Include="机房预约系统\OrderFile.h" />
+    <ClInclude Include="机房预约系统\Student.h" />
+    <ClInclude Include="机房预约系统\Teacher.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="机房预约系统\computer.txt" />
+    <Text Include="机房预约系统\manager.txt" />
+    <Text Include="机房预约系统\order.txt" />
+    <Text Include="机房预约系统\student.txt" />
+    <Text Include="机房预约系统\teacher.txt" />
+    <Text Include="机房预约系统\项目需求.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

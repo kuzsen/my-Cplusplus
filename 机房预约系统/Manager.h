@@ -13,7 +13,7 @@ public:
 
 	Manager(string name, string password);	//有参构造
 	
-	virtual void operMenu();//管理员操作界面
+	virtual void operMenu();//管理员操作界面，子类中实现纯虚函数的实现，的，头文件声明，在Manager.cpp中具体实现
 	
 	void addPerson();//添加账号（学生or老师）
 
