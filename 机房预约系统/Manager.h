@@ -19,7 +19,7 @@ public:
 
 	void noPerson();  //删除账号
 	
-	void showPerson();//
+	void showPerson();//管理员删除账号（学生or老师）——————————————未实现
 	
 	void showComputer();//查看机房信息
 	

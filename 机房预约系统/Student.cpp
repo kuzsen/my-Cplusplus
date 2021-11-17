@@ -1,6 +1,8 @@
 #include "Student.h"
 #include "GolbalFile.h"
 #include "OrderFile.h"
+#include<cstdlib>//在此添加是为了解决Student.cpp中system("pause");system("cls");  提示system不明确问题
+//在C里就是stdlib.h，在c++里就是cstdlib，里面封装了许多函数，
 
 Student::Student()
 {
@@ -108,18 +110,20 @@ void Student :: showMyOrder()
 	在头文件以及源文件下分别创建OrderFile.h和OrderFile.cpp文件
 	*/
 
-	OrderFile of;//创建预约文件的对象，对预约文件order_file进行读写，更新，获取预约条数等操作
+	OrderFile of;//创建预约文件的对象，调用了构造函数，已经将order_file中的信息读入到m_orderData大容器中对预约文件order_file进行读写，更新，获取预约条数等操作
 	if (of.orderNum == 0) {
-		cout << "无预约记录" << endl;
+		cout << "无预约记录!" << endl;
 		system("pause");
 		system("cls");
 		return;
 	}
+	int orderMyself = 0;//所有自身预约记录,若遍历完预约文件的大容器后，vMyself.size() == 0，则没有该学生的预约记录
 	for (int i = 0; i < of.orderNum; i++) {
 		//string 转 int
 		//string 利用 .c_str() 转 const char*
 		//利用 atoi(const char*) 转 int
 		if (atoi(of.m_orderData[i]["stuId"].c_str()) == this->m_studentId) {
+			orderMyself++;//检测到自身预约记录加一
 			cout << "预约日期: 周" << of.m_orderData[i]["date"];
 			cout << " 时间段：" << (of.m_orderData[i]["interval"] == "1" ? "上午" : "下午");
 			cout << " 机房号：" << of.m_orderData[i]["roomId"];
@@ -140,6 +144,10 @@ void Student :: showMyOrder()
 			cout << " " << status;
 			cout << endl;
 		}
+
+	}
+	if (orderMyself == 0) {
+		cout << "预约文件中没有您的预约记录!" << endl;
 	}
 	system("pause");
 	system("cls");
@@ -149,10 +157,98 @@ void Student :: showMyOrder()
 
 void  Student :: showAllOrder()
 {
+	OrderFile of;
+	if (of.orderNum == 0) {
+		cout << "无预约记录!" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	for (int i = 0; i < of.orderNum; i++) {
+		cout << i + 1 << "、";
 
+		cout << "预约日期: 周" << of.m_orderData[i]["date"];
+		cout << " 时间段：" << (of.m_orderData[i]["interval"] == "1" ? "上午" : "下午");
+		cout << " 学号：" << of.m_orderData[i]["stuId"];
+		cout << " 姓名：" << of.m_orderData[i]["stuName"];
+		cout << " 机房：" << of.m_orderData[i]["roomId"];
+		string status = "状态：";
+		//1 审核中 2 已预约 -1 预约失败 0 取消预约
+		if (of.m_orderData[i]["status"] == "1") {
+			status += "审核中";
+		}
+		else if (of.m_orderData[i]["status"] == "2") {
+			status += "预约成功";
+		}
+		else if (of.m_orderData[i]["status"] == "-1") {
+			status += "预约失败，审核未通过";
+		}
+		else {
+			status += "预约已取消";
+		}
+		cout << " " << status;
+		cout << endl;
+	}
+	system("pause");
+	system("cls");
 }
 
 void  Student :: cancelOrder()
 { 
+	OrderFile of;
+	if (of.orderNum == 0) {
+		cout << "无预约记录" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	cout << "审核中或以预约成功的记录可以取消，请输入取消的记录" << endl;
 
+	vector<int> v;//储存自身所有  审核中或以预约成功  的记录
+	int index = 1;//v中的第index条记录
+	for (int i = 0; i < of.orderNum; i++) {
+		if (atoi(of.m_orderData[i]["stuId"].c_str()) == this->m_studentId) {
+			if (of.m_orderData[i]["status"] == "1" || of.m_orderData[i]["status"] == "2") {
+				v.push_back(i);//将检测到的————自身所有  审核中或以预约成功  的记录————插入到容器中
+				cout << index++ << "、 ";
+				cout << "预约日期：周" << of.m_orderData[i]["date"];
+				cout << " 时段：" << (of.m_orderData[i]["interval"] == "1" ? "上午" : "下午");
+				cout << " 机房：" << of.m_orderData[i]["roomId"];
+				string status = " 状态：";
+				if (of.m_orderData[i]["status"] == "1") {
+					status += "审核中";
+				}
+				else if (of.m_orderData[i]["status"] == "2") {
+					status += "预约成功";
+				}
+				cout << status << endl;
+			}
+		}
+	}
+	if (v.size() == 0) {
+		cout << "预约文件中没有您可以取消的记录！" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	cout << "审核中或以预约成功的记录可以取消，请输入取消的记录" << endl;
+	cout << "请输入自身所有“审核中或以预约成功” 的记录容器v中，需要取消的第select条记录，0代表返回" << endl;
+	int select = 0;
+	while (true) {
+		cin >> select;
+		if (select >= 0 && select <= v.size()) {
+			if (select == 0) {
+				break;
+			}
+			else {
+				of.m_orderData[v[select - 1]]["status"] = "0";
+				of.updateOrder();//状态改变后，立即更新预约文件
+				cout << "已取消预约" << endl;
+				system("pause");
+				system("cls");
+				break;
+			}
+		}
+		cout << "输入有误，请重新输入" << endl;
+	}
 }

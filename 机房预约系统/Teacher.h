@@ -15,7 +15,7 @@ public:
 	virtual void operMenu();
 	//查看所有预约
 	void showAllOrder();
-	//审核预约
+	//审核预约————教师审核学生的预约，依据实际情况审核预约
 	void validOrder();
 	//教师职工号
 	int m_teacherId;

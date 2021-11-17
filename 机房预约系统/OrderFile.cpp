@@ -69,22 +69,22 @@ OrderFile :: OrderFile()
 			value = status.substr(pos + 1, status.size() - pos - 1);
 			m.insert(make_pair(key, value));
 		}
-		this->orderNum++;//读取到预约记录加一
+		
 		//将小map容器放入到大的map容器中
-		this->m_orderData.insert(make_pair(this->orderNum++, m));
+		this->m_orderData.insert(make_pair(this->orderNum, m));// m_orderData的key对应的vaule是第key+1条预约信息
+		this->orderNum++;//读取到预约记录加一
 	}
 	ifs.close();
-	//测试最大map容器
-	//for (map<int, map<string, string>>::iterator it = m_orderData.begin();
-	//	it != m_orderData.end(); it++) {
-	//	cout << "条数为：" << it->first << " value = " << endl;
-	//	for (map<string, string>::iterator mit = (*it).second.begin();
-	//		mit != (*it).second.end(); mit++) {
-	//		cout << " key = " << mit->first << " value = " << mit->second << " ";
-	//	}
-	//	cout << endl; 
-	//}
-
+	/*cout << "测试最大map容器" << endl;
+	for (map<int, map<string, string>>::iterator it = m_orderData.begin();
+		it != m_orderData.end(); it++) {
+		cout << "第"<< it->first + 1<<"条预约信息为："<< " value = " << endl;
+		for (map<string, string>::iterator mit = (*it).second.begin();
+			mit != (*it).second.end(); mit++) {
+			cout << " key = " << mit->first << " value = " << mit->second << " ";
+		}
+		cout << endl; 
+	}*/
 }
 
 void OrderFile :: updateOrder ()

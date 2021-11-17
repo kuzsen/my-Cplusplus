@@ -55,12 +55,36 @@ void studentMenu(Identity*& father)
 			system("cls");
 			return;			
 		}
-
-
 	}
 }
 
 //全局函数——进入老师操作子菜单界面
+void teachrMenu(Identity*& father)
+{
+	while (true) {
+		//教师菜单
+		father->operMenu();
+
+		Teacher* tea = (Teacher*)father;
+		int select = 0;//接收老师的选择
+		cin >> select;
+		if (select == 1) {
+			//查看所有预约
+			tea->showAllOrder();
+		}
+		else if (select == 2) {
+			//审核预约
+			tea->validOrder();
+		}
+		else {
+			delete father;
+			cout << "注销成功" << endl;
+			system("pause");
+			system("cls");
+			return;
+		}
+	}
+}
 
 void managerMenu(Identity*& father)//参数father的类型为父类指针
 {
@@ -185,7 +209,7 @@ void LoginIn(string filename,int type)//fileName — 操作的文件名，type — 登录的
 
 				Father = new Teacher(id, name, password);  //父类指针指向子类对象
 				//进入老师身份的子菜单
-				//studentMenu(Father);
+				teachrMenu(Father);
 				return;
 			}
 		}

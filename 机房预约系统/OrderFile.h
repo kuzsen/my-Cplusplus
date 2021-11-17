@@ -12,10 +12,10 @@ public:
 	//更新预约记录
 	void updateOrder();
 
-	//记录的容器 key = 记录的条数, value = 每条记录具体的键值对信息，比如{{data, 1},{interval, 2}, .....}
-	map<int, map<string, string>> m_orderData;
+	//记录的容器 key = 记录的条数 - 1, value = 每条记录具体的键值对信息，比如{{data, 1},{interval, 2}, .....}
+	map<int, map<string, string>> m_orderData;//// m_orderData的key对应的vaule是第key+1条预约信息
 
-	//预约记录条数
+	//预约记录条数0，1，2，。。。。orderNum - 1 ，共orderNum条预约记录
 	int orderNum;
 };
 
