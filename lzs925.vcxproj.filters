@@ -123,10 +123,10 @@
     <ClCompile Include="机房预约系统\Teacher.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="机房预约系统\主函数.cpp">
+    <ClCompile Include="机房预约系统\OrderFile.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="机房预约系统\OrderFile.cpp">
+    <ClCompile Include="LeetCode刷题\每日一题372超级次方.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
