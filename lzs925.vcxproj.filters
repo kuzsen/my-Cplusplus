@@ -129,6 +129,9 @@
     <ClCompile Include="LeetCode刷题\每日一题372超级次方.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题1005. K 次取反后最大化的数组和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
