@@ -126,10 +126,13 @@
     <ClCompile Include="机房预约系统\OrderFile.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\每日一题372超级次方.cpp">
+    <ClCompile Include="LeetCode刷题\每日一题1005. K 次取反后最大化的数组和.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\每日一题1005. K 次取反后最大化的数组和.cpp">
+    <ClCompile Include="LeetCode刷题\每日一题372超级次方——快速降幂法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题689三个无重叠子数组的最大和——三个滑动窗口同步进行.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

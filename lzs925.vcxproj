@@ -196,13 +196,16 @@
     <ClCompile Include="LeetCode刷题\LeetCode第二题两数相加.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\每日一题1005. K 次取反后最大化的数组和.cpp" />
+    <ClCompile Include="LeetCode刷题\每日一题1005. K 次取反后最大化的数组和.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\每日一题319灯泡开关（数论题，中等）.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\每日一题372超级次方.cpp">
+    <ClCompile Include="LeetCode刷题\每日一题372超级次方——快速降幂法.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题689三个无重叠子数组的最大和——三个滑动窗口同步进行.cpp" />
     <ClCompile Include="华为机试\17坐标移动.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
