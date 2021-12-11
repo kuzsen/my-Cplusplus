@@ -138,6 +138,9 @@
     <ClCompile Include="LeetCode刷题\每日一题748最短补全词（初始化数组的四种方式）.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题911在线选举——哈希+二分法（中等）.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
