@@ -208,6 +208,7 @@
     <ClCompile Include="LeetCode刷题\每日一题689三个无重叠子数组的最大和——三个滑动窗口同步进行.cpp" />
     <ClCompile Include="LeetCode刷题\每日一题709在排序数组中查找元素的第一个和最后一个位置——二分法（向下取整与向上取整）.cpp" />
     <ClCompile Include="LeetCode刷题\每日一题748最短补全词（初始化数组的四种方式）.cpp" />
+    <ClCompile Include="LeetCode刷题\每日一题807保持城市天际线（贪心+模拟）.cpp" />
     <ClCompile Include="LeetCode刷题\每日一题911在线选举——哈希+二分法（中等）.cpp" />
     <ClCompile Include="华为机试\17坐标移动.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
