@@ -205,6 +205,7 @@
     <ClCompile Include="LeetCode刷题\每日一题372超级次方——快速降幂法.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题630课程表III——经典贪心+lambda排序+优先队列大根堆.cpp" />
     <ClCompile Include="LeetCode刷题\每日一题689三个无重叠子数组的最大和——三个滑动窗口同步进行.cpp" />
     <ClCompile Include="LeetCode刷题\每日一题709在排序数组中查找元素的第一个和最后一个位置——二分法（向下取整与向上取整）.cpp" />
     <ClCompile Include="LeetCode刷题\每日一题748最短补全词（初始化数组的四种方式）.cpp" />
