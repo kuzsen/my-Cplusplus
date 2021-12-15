@@ -150,6 +150,9 @@
     <ClCompile Include="LeetCode刷题\每日一题630课程表III——经典贪心+lambda排序+优先队列大根堆.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题851喧闹与富有——DFS和拓扑排序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
