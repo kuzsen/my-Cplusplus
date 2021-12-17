@@ -156,6 +156,9 @@
     <ClCompile Include="LeetCode刷题\1610可见点的最大数目（困难——反正切函数+排序+双指针）.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\1518换酒问题（最多换多少瓶）.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
