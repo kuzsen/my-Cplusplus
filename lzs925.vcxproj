@@ -154,8 +154,12 @@
     <ClCompile Include="LeetCode刷题\145二叉树的后序遍历.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\1518换酒问题（最多换多少瓶）.cpp" />
-    <ClCompile Include="LeetCode刷题\1610可见点的最大数目（困难——反正切函数+排序+双指针）.cpp" />
+    <ClCompile Include="LeetCode刷题\1518换酒问题（最多换多少瓶）.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\1610可见点的最大数目（困难——反正切函数+排序+双指针）.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\17电话号码的字母组合.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -168,6 +172,7 @@
     <ClCompile Include="LeetCode刷题\22括号生成.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\32最长有效括号——动态规划（困难，容易理解）.cpp" />
     <ClCompile Include="LeetCode刷题\375猜数字游戏II.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -207,14 +212,30 @@
     <ClCompile Include="LeetCode刷题\每日一题372超级次方——快速降幂法.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\每日一题419甲板上的战舰.cpp" />
-    <ClCompile Include="LeetCode刷题\每日一题630课程表III——经典贪心+lambda排序+优先队列大根堆.cpp" />
-    <ClCompile Include="LeetCode刷题\每日一题689三个无重叠子数组的最大和——三个滑动窗口同步进行.cpp" />
-    <ClCompile Include="LeetCode刷题\每日一题709在排序数组中查找元素的第一个和最后一个位置——二分法（向下取整与向上取整）.cpp" />
-    <ClCompile Include="LeetCode刷题\每日一题748最短补全词（初始化数组的四种方式）.cpp" />
-    <ClCompile Include="LeetCode刷题\每日一题807保持城市天际线（贪心+模拟）.cpp" />
-    <ClCompile Include="LeetCode刷题\每日一题851喧闹与富有——DFS和拓扑排序.cpp" />
-    <ClCompile Include="LeetCode刷题\每日一题911在线选举——哈希+二分法（中等）.cpp" />
+    <ClCompile Include="LeetCode刷题\每日一题419甲板上的战舰.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题630课程表III——经典贪心+lambda排序+优先队列大根堆.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题689三个无重叠子数组的最大和——三个滑动窗口同步进行.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题709在排序数组中查找元素的第一个和最后一个位置——二分法（向下取整与向上取整）.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题748最短补全词（初始化数组的四种方式）.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题807保持城市天际线（贪心+模拟）.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题851喧闹与富有——DFS和拓扑排序.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\每日一题911在线选举——哈希+二分法（中等）.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="华为机试\17坐标移动.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

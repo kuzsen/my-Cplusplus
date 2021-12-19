@@ -162,6 +162,9 @@
     <ClCompile Include="LeetCode刷题\每日一题419甲板上的战舰.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\32最长有效括号——动态规划（困难，容易理解）.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
