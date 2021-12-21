@@ -178,7 +178,13 @@
     <ClCompile Include="LeetCode刷题\375猜数字游戏II.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\41缺失的第一个正数%28原地哈希——困难——容易理解%29.cpp" />
+    <ClCompile Include="LeetCode刷题\41缺失的第一个正数%28原地哈希——困难——容易理解%29.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\42接雨水——四种方法.cpp" />
+    <ClCompile Include="LeetCode刷题\43字符串相乘.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\4寻找两个正序数组的中位数（困难）.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

@@ -168,6 +168,12 @@
     <ClCompile Include="LeetCode刷题\41缺失的第一个正数%28原地哈希——困难——容易理解%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\43字符串相乘.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\42接雨水——四种方法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
