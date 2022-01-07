@@ -183,6 +183,9 @@
     <ClCompile Include="LeetCode刷题\每日一题1078找字符串中第三个单词.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\单调栈——求区间最小数乘区间和的最大值.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
