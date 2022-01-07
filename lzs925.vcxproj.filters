@@ -186,6 +186,9 @@
     <ClCompile Include="LeetCode刷题\单调栈——求区间最小数乘区间和的最大值.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\56合并区间——排序+双指针——中等.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
