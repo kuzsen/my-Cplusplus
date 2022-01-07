@@ -196,7 +196,10 @@
     <ClCompile Include="LeetCode刷题\520检测大写字母.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\56合并区间——排序+双指针——中等.cpp" />
+    <ClCompile Include="LeetCode刷题\56合并区间——排序+双指针——中等.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\57插入区间.cpp" />
     <ClCompile Include="LeetCode刷题\5最长回文子串.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
