@@ -205,7 +205,9 @@
     <ClCompile Include="LeetCode刷题\57插入区间.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\5986设置时间的最少代价.cpp" />
+    <ClCompile Include="LeetCode刷题\5986设置时间的最少代价.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\5994查找给定哈希值的子串.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -233,6 +235,7 @@
     <ClCompile Include="LeetCode刷题\LeetCode第二题两数相加.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\剑指offer59滑动窗口的最大值.cpp" />
     <ClCompile Include="LeetCode刷题\单调栈——求区间最小数乘区间和的最大值.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

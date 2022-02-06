@@ -207,6 +207,9 @@
     <ClCompile Include="LeetCode刷题\5986设置时间的最少代价.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\剑指offer59滑动窗口的最大值.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
