@@ -148,6 +148,7 @@
     <ClCompile Include="LeetCode刷题\11盛最多水的容器_双指针.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\1405最长快乐字符串——贪心.cpp" />
     <ClCompile Include="LeetCode刷题\144二叉树的前序遍历——递归法和栈实现.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -235,7 +236,9 @@
     <ClCompile Include="LeetCode刷题\LeetCode第二题两数相加.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\剑指offer59滑动窗口的最大值.cpp" />
+    <ClCompile Include="LeetCode刷题\剑指offer59滑动窗口的最大值.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\单调栈——求区间最小数乘区间和的最大值.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
