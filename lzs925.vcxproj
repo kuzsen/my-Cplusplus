@@ -240,6 +240,7 @@
     <ClCompile Include="LeetCode刷题\LeetCode第二题两数相加.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\剑指offer56-II.cpp" />
     <ClCompile Include="LeetCode刷题\剑指offer59滑动窗口的最大值.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
