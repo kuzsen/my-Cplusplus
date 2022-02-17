@@ -222,6 +222,9 @@
     <ClCompile Include="LeetCode刷题\剑指offer56-II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\210课程表II——循环检测以来，bfs实现拓扑排序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">

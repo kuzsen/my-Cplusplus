@@ -173,6 +173,7 @@
     <ClCompile Include="LeetCode刷题\20有效的括号组合_简单_哈希+栈.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\210课程表II——循环检测以来，bfs实现拓扑排序.cpp" />
     <ClCompile Include="LeetCode刷题\22括号生成.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
