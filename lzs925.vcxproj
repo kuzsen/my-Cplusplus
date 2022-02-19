@@ -238,7 +238,9 @@
     <ClCompile Include="LeetCode刷题\94二叉树的中序遍历.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\969煎饼排序cpp.cpp" />
+    <ClCompile Include="LeetCode刷题\969煎饼排序cpp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\LeetCode第一题两数之和.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -260,6 +262,7 @@
     <ClCompile Include="LeetCode刷题\剑指offer59队列的最大值————单调双向队列.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\剑指offer62圆圈中最后剩下的数字.cpp" />
     <ClCompile Include="LeetCode刷题\单调栈——求区间最小数乘区间和的最大值.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
