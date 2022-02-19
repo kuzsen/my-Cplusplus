@@ -231,6 +231,9 @@
     <ClCompile Include="LeetCode刷题\剑指offer59队列的最大值————单调双向队列.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\969煎饼排序cpp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">

@@ -139,7 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LeetCode刷题\1001网格照明.cpp" />
+    <ClCompile Include="LeetCode刷题\1001网格照明.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\102二叉树数的层序遍历.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -173,7 +175,9 @@
     <ClCompile Include="LeetCode刷题\20有效的括号组合_简单_哈希+栈.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\210课程表II——循环检测以来，bfs实现拓扑排序.cpp" />
+    <ClCompile Include="LeetCode刷题\210课程表II——循环检测以来，bfs实现拓扑排序.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\22括号生成.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -228,10 +232,13 @@
     <ClCompile Include="LeetCode刷题\8_字符串转换为整数（atoi）.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\93复原IP地址（回溯）.cpp" />
+    <ClCompile Include="LeetCode刷题\93复原IP地址（回溯）.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\94二叉树的中序遍历.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\969煎饼排序cpp.cpp" />
     <ClCompile Include="LeetCode刷题\LeetCode第一题两数之和.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -241,12 +248,18 @@
     <ClCompile Include="LeetCode刷题\LeetCode第二题两数相加.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\剑指offer49丑数——动态规划.cpp" />
-    <ClCompile Include="LeetCode刷题\剑指offer56-II.cpp" />
+    <ClCompile Include="LeetCode刷题\剑指offer49丑数——动态规划.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LeetCode刷题\剑指offer56-II.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\剑指offer59滑动窗口的最大值.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\剑指offer59队列的最大值————单调双向队列.cpp" />
+    <ClCompile Include="LeetCode刷题\剑指offer59队列的最大值————单调双向队列.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\单调栈——求区间最小数乘区间和的最大值.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
