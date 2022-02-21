@@ -223,7 +223,9 @@
     <ClCompile Include="LeetCode刷题\5最长回文子串.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="LeetCode刷题\6014构造限制重复次数的字符串.cpp" />
+    <ClCompile Include="LeetCode刷题\6014构造限制重复次数的字符串.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\61旋转K次链表.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -269,6 +271,7 @@
     <ClCompile Include="LeetCode刷题\单调栈——求区间最小数乘区间和的最大值.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\手撕快速排序.cpp" />
     <ClCompile Include="LeetCode刷题\每日一题1005. K 次取反后最大化的数组和.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -340,10 +343,6 @@
     <ClCompile Include="时间复杂度.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="机房预约系统\Manager.cpp" />
-    <ClCompile Include="机房预约系统\OrderFile.cpp" />
-    <ClCompile Include="机房预约系统\Student.cpp" />
-    <ClCompile Include="机房预约系统\Teacher.cpp" />
     <ClCompile Include="正则表达式match.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -361,21 +360,6 @@
     <ClInclude Include="哈希表myhash.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClInclude>
-    <ClInclude Include="机房预约系统\ComputerRoom.h" />
-    <ClInclude Include="机房预约系统\GolbalFile.h" />
-    <ClInclude Include="机房预约系统\Identity.h" />
-    <ClInclude Include="机房预约系统\Manager.h" />
-    <ClInclude Include="机房预约系统\OrderFile.h" />
-    <ClInclude Include="机房预约系统\Student.h" />
-    <ClInclude Include="机房预约系统\Teacher.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="机房预约系统\computer.txt" />
-    <Text Include="机房预约系统\manager.txt" />
-    <Text Include="机房预约系统\order.txt" />
-    <Text Include="机房预约系统\student.txt" />
-    <Text Include="机房预约系统\teacher.txt" />
-    <Text Include="机房预约系统\项目需求.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
