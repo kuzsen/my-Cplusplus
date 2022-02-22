@@ -234,6 +234,9 @@
     <ClCompile Include="LeetCode刷题\写三个线程交替打印abc.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode刷题\105从中序与前序遍历序列构造二叉树.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
