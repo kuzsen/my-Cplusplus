@@ -240,6 +240,9 @@
     <ClCompile Include="美团面试题——小美的仓库.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="字节面试题——求数组中比左边元素都大同时比右边元素都小的元素，返回这些元素的索引.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">

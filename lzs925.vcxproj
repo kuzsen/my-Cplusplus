@@ -139,7 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="美团面试题——小美的仓库.cpp" />
+    <ClCompile Include="字节面试题——求数组中比左边元素都大同时比右边元素都小的元素，返回这些元素的索引.cpp" />
+    <ClCompile Include="美团面试题——小美的仓库.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="LeetCode刷题\1001网格照明.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
