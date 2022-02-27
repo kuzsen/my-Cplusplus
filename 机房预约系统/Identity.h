@@ -10,6 +10,6 @@ public:
 	//每个子类都有自己单独的操作菜单
 	virtual void operMenu() = 0;
 
-	string m_Name;//密码
+	string m_Name;//身份姓名
 	string m_Password;//密码
 };
