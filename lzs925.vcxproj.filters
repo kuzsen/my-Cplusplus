@@ -255,7 +255,4 @@
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="C:\Users\a%27d%27mia\Desktop\我的面经.md" />
-  </ItemGroup>
 </Project>
