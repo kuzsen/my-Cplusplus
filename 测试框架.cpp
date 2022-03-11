@@ -1,4 +1,4 @@
-//#include<iostream>
+ï»¿//#include<iostream>
 //#include <vector>
 //#include <queue>
 //#include <algorithm>
@@ -9,9 +9,9 @@
 //
 //
 //using namespace std;
-//int solution(int a, int b) { // a±ßĞÎ£¬µÚb¸ö
+//int solution(int a, int b) { // aè¾¹å½¢ï¼Œç¬¬bä¸ª
 //	int res = 1;
-//	int d = a - 2; // ¹«²î
+//	int d = a - 2; // å…¬å·®
 //	for (int i = 2; i <= b + 1; i++) {
 //		int numi = 1 + (i - 1) * d;
 //		res += numi;
@@ -35,7 +35,7 @@
 //	system("cls");
 //	return 0;
 //}
-//// Õın±ßĞÎÖĞµÈÑüÈñ½ÇÈı½ÇĞÎµÄÊıÁ¿£¬Èı½ÇĞÎµÄ¶¥µãÒªÔÚ¶à±ßĞÎµÄ¶¥µãÉÏ
+//// æ­£nè¾¹å½¢ä¸­ç­‰è…°é”è§’ä¸‰è§’å½¢çš„æ•°é‡ï¼Œä¸‰è§’å½¢çš„é¡¶ç‚¹è¦åœ¨å¤šè¾¹å½¢çš„é¡¶ç‚¹ä¸Š
 #include<iostream>
 #include <vector>
 #include <string>
@@ -46,7 +46,7 @@ public:
     vector<string> res;
     void solution(vector<string>& input) {
         vector<string> res;
-        vector<vector<double>> count(4, vector<double>(4, 0)); // Í³¼ÆÃ¿¸öÎ»ÖÃÖÜ±ßÎ´Öª×´Ì¬'.'µÄ¸öÊı
+        vector<vector<double>> count(4, vector<double>(4, 0)); // ç»Ÿè®¡æ¯ä¸ªä½ç½®å‘¨è¾¹æœªçŸ¥çŠ¶æ€'.'çš„ä¸ªæ•°
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 if (input[i][j] == '.') {
@@ -67,7 +67,7 @@ public:
                 else if (input[i][j] - 0 > 0 && input[i][j] - 00 <= 8) {
                     int newx = i + drx[i], newy = j + dry[j];
                     if (newx >= 0 && newx <= 4 && newy >= 0 && newy <= 4 && input[newx][newy] == '.') {
-                        maybe[newx][newy] += (input[i][j] - 0) / count[i][j]; // ÀÛ¼Ó¹±Ï×
+                        maybe[newx][newy] += (input[i][j] - 0) / count[i][j]; // ç´¯åŠ è´¡çŒ®
                     }
                 }
             }
@@ -94,5 +94,59 @@ int main() {
     }
     solution(input);
 
+    return 0;
+}
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    vector<int> cats(n);
+    int sumCat = 0;
+    for (int i = 0; i < n; i++) {
+        int cat;
+        cin >> cat;
+        sumCat += cat;
+        cats[i] = cat;
+    }
+    vector<int> last(n);
+    for (int i = 0; i < n; i++) {
+        last[i] = sumCat - cats[i]; // å‰©ä½™çŒ«çŒ«çš„èƒ½åŠ›å€¼
+    }
+
+    int m;
+    cin >> m;
+    vector<vector<int>> dogs(m, vector<int>(2));
+    for (int i = 0; i < m; i++) {
+        int b, c;
+        cin >> b >> c;
+        dogs[i][0] = b;
+        dogs[i][1] = c;
+    }
+
+    for (int i = 0; i < m; i++) { // æ¯åªğŸ•å‘èµ·æ”»å‡»
+        int add = 0;
+        bool flag = false;
+        for (int j = 0; j < n; j++) { // éå†çŒ«çŒ«jè¿æˆ˜ï¼Œæœ€åé€‰æ‹©éœ€è¦å¢åŠ èƒ½åŠ›å€¼æœ€å°çš„
+            /*if (cats[j] >= dogs[i][0] && last[j] >= dogs[i][1]) {
+                cout << 0 << endl; // ä¸éœ€è¦å¢åŠ 
+                break;
+            }*/
+            int add1 = cats[j] < dogs[i][0] ? dogs[i][0] - cats[j] : 0;
+            int add2 = last[j] < dogs[i][1] ? dogs[i][1] - last[j] : 0;
+            if (add == 0 && !flag) {
+                add = add1 + add2;
+                flag = true;
+            }
+            else {
+                add = min(add, add1 + add2);
+                // if (add == 0) break;
+            }
+
+        }
+        cout << add << endl;
+    }
     return 0;
 }
