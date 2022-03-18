@@ -49,3 +49,17 @@ int main()
     cout << res;
     return 0;
 }
+struct LisNode {
+    int val;
+    LisNode* next;
+    LisNode(int _val) : val(_val), next(nullptr) {}
+};
+struct myTree {
+    int val;
+    myTree* left;
+    myTree* right;
+    myTree() : val(0), left(nullptr), right(nullptr) {}
+    myTree(int x) : val(x), left(nullptr), right(nullptr) {}
+    myTree(int x, myTree* _left, myTree* _right) : val(x), left(_left), right() {}
+
+}
