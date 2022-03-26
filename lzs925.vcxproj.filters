@@ -255,6 +255,9 @@
     <ClCompile Include="3.19.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="3.26.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
