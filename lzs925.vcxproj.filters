@@ -255,7 +255,10 @@
     <ClCompile Include="3.19.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="3.26.cpp">
+    <ClCompile Include="3.28腾讯面试题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="我的面试题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
