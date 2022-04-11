@@ -1,36 +1,48 @@
 #include <iostream>
 using namespace std;
 #include <vector>
-void quick(vector<int>& nums, int l, int r) {
-	if (l > r) return;
-	int i = l, j = r, piv = nums[l];
-	while (i < j) {
-		while (i < j && nums[j] <= piv)
-		{
-			j--;
+#include <string>
+#include <stack>
+string last_str(string str) {
+	// /user/your_name/.. 
+	// /user/./your_name 
+	// stack<string> st;
+	stack<string> st;
+	string res;
+	for (int i = 0; i < str.size(); i++) {
+		if (str[i] == '/') {
+			int j = i + 1;
+			string cur;
+			while (j < str.size() && str[j] != '/') {
+				cur += str[j];
+			}
+			if (cur == "..") {
+				st.pop();
+			}
+			else if (cur == ".") {
+				if (st.empty()) {
+					res = "/root/";
+					return res;
+				}
+				else {
+					continue;
+				}
+			}
+			else {
+				st.push(cur);
+			}
 		}
-		nums[i] = nums[j];
-		while (i < j && nums[i] >= piv) {
-			i++;
-		}
-		nums[j] = nums[i];
 	}
-	nums[i] = piv; // 更新哨兵位置
-	quick(nums, l, i - 1);
-	quick(nums, i + 1, r);
-}
+	// 最后输出栈中的字符串
 
-vector<int> quickSort(vector<int> nums) {
-	quick(nums, 0, nums.size() - 1);
-	return nums;
+	return res;
 }
 int main()
 {
-	vector<int> nums = { 2,5,4,8,1,2 };
-	vector<int> res = quickSort(nums);
-	for (int i = 0; i < res.size(); i++) {
-		cout << res[i] << " ";
-	}
+	string str;
+	cin >> str;
+	cout << last_str(str);
+
 	system("pause");
 	system("cls");
 	return 0;
