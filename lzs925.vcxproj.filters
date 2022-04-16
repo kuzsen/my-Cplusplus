@@ -261,6 +261,9 @@
     <ClCompile Include="我的面试题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="百度一面手撕算法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
