@@ -258,13 +258,13 @@
     <ClCompile Include="3.28腾讯面试题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="我的面试题.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="百度一面手撕算法.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="源.cpp">
+    <ClCompile Include="百度一面实现哈希的查找和插入功能.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="linux目录切换.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,3 +1,6 @@
+// ..两个点表示返回上一级目录
+// .一个点表示当前目录
+
 #include <iostream>
 using namespace std;
 #include <vector>
@@ -7,6 +10,7 @@ string last_str(string str) {
 	// /user/your_name/.. 
 	// /user/./your_name 
 	// stack<string> st;
+
 	stack<string> st;
 	string res;
 	for (int i = 0; i < str.size(); i++) {
@@ -33,7 +37,7 @@ string last_str(string str) {
 			}
 		}
 	}
-	// 最后输出栈中的字符串
+	// 最后输出栈st中的字符串
 
 	return res;
 }
