@@ -273,6 +273,9 @@
     <ClCompile Include="常量指针与指针常量.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="华为机试\HJ36字符串加密.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
