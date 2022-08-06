@@ -279,6 +279,9 @@
     <ClCompile Include="2360图中最长环.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="微软笔试86.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
