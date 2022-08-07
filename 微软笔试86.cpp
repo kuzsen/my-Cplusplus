@@ -1,7 +1,7 @@
-#include<iostream>
+/*#include<iostream>
 #include <queue>
 #include <string>
-using namespace std;
+using namespace std;*/
 /*
 int solution(string& S, int B) {
     // write your code in C++ (C++14 (g++ 6.2.0))
@@ -47,12 +47,17 @@ int main()
 	return 0;
 }
 */
-class Solution {
+
+
+
+// 科大讯飞笔试第三题，leetcode原题115，dfs会超时？
+/*class Solution {
 private:
     int res;
     int n;
-    string s = "iflytek";
-public:
+    // string s = "iflytek";
+    string s = "bag";
+public:*/
     /**
      * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
      *
@@ -60,8 +65,8 @@ public:
      * @param str string字符串 输入字符串
      * @return int整型
      */
-    void dfs(string& str, int start, int ind) {
-        if (ind == 7) {
+  /*  void dfs(string& str, int start, int ind) {
+        if (ind == 3) {
             res++;
             return;
         }
@@ -81,9 +86,71 @@ public:
 
 int main() {
 
-    string str = "iflylytfetkeefek";
+    // string str = "iflylytfetkeefek";
+    string str = "babgbag";
     cout << Solution().findIflytek(str);
 
+    system("pause");
+    system("cls");
+    return 0;
+}
+*/
+#include <iostream>
+#include <string>
+#include <unordered_map>
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+int main() {
+    //int M;
+    // cin >> M;
+    //vector<int> res;
+    //while (M) {
+
+       // M--;
+        string S = "bbbooyy";
+        // int N;
+        // cin >> S;
+        // cin >> N;
+        string words = "bob boy" ;
+        // getchar(); // https://blog.csdn.net/yrk0556/article/details/88040954
+        // getline(cin, words);
+        unordered_map<char, int> cnt;
+        for (char c : S) {
+            cnt[c]++;
+        }
+        int curres = 0;
+        for (int i = 0; i < words.size();) {
+            if (words[i] != ' ') { // 找到一个单词word的起点
+                int num = INT32_MAX; // words中可以形成当前单词word的个数
+                unordered_map<char, int> curcnt;
+                curcnt[words[i]]++;
+                int j = i + 1;
+                while (j < words.size() && words[j] != ' ') { // 注意不要上来就j++，因为j = i+ 1
+                    curcnt[words[j]]++;
+                    j++;
+                }
+                // string word = words.substr(i, j - i);
+                for (unordered_map<char, int> :: iterator it = curcnt.begin(); it != curcnt.end(); it++) {
+                    if (cnt.count(it->first) < 1) {
+                        num = 0;
+                        break;
+                    }
+                    // words中的字符c是当前word中c的倍数，维护其最小值 
+                    num = min(cnt[it->first] / it->second, num); 
+                }
+                curres = max(curres, num); // 不同单词对应的num不同，对于一组case，维护其最大值
+                i = j;
+            }
+            else i++;
+        }
+        cout << curres;
+        // res.push_back(curres);
+    // }
+    /*for (int r : res) {
+        cout << r << endl;
+    }*/
     system("pause");
     system("cls");
     return 0;
