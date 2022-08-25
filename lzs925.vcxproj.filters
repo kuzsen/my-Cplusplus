@@ -294,6 +294,9 @@
     <ClCompile Include="10大排序\堆排序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="10大排序\输入问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="哈希表myhash.h">
